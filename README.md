@@ -1,11 +1,17 @@
 # Installing helm chart - "helloworld-chart"
+<br />
+
 **Clone helloworld-chart from github:**
 
 `git clone https://github.com/srihas/helloworld-chart.git`
 
+<br />
+
 **Change directory to the cloned directory**
 
 `cd helloworld-chart`
+
+<br />
 
 **Install helm chart from local directory using:**
 
