@@ -1,27 +1,35 @@
-# Installing helm chart - helloworld-chart
-Clone helloworld-chart from github:
+# Installing helm chart - "helloworld-chart"
+**Clone helloworld-chart from github:**
+
 `git clone https://github.com/srihas/helloworld-chart.git`
 
-Change directory to the cloned directory
+**Change directory to the cloned directory**
+
 `cd helloworld-chart`
 
-Install helm chart from local directory using:
+**Install helm chart from local directory using:**
+
 `helm install helloworld .`
 
-Check status of helm chart:
+**Check status of helm chart:**
+
 `helm list`
 
-Check kubectl entities:
+**Check kubectl entities:**
+
 `kubectl get all`
 
-In case of errors in deployment of pod, like ImgPullBack etc:
+**In case of errors in deployment of pod, like ImgPullBack etc:**
+
 `kubectl describe pod <pod-container-id>`
 
-Once the pod is Running, launch url in browser:
+**Once the pod is Running, launch url in browser:**
+
 `http://localhost`
 
 
 
-Finally to uninstall the helm chart and all kubernetes entities automatically:
+**Finally to uninstall the helm chart and all kubernetes entities automatically:**
+
 `helm uninstall helloworld`
 
