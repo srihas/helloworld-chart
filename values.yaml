@@ -1,0 +1,42 @@
+replicaCount: 1
+
+image:
+  repository: tutum/hello-world
+  tag: latest
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name:
+
+podSecurityContext: {}
+
+securityContext: {}
+
+service:
+  name: hello-world
+  type: LoadBalancer
+  externalPort: 80
+  internalPort: 8008
+  port: 80
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: chart-example.local
+      paths: []
+  tls: []
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
